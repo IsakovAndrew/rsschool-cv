@@ -1,3 +1,225 @@
-p{background-color: darkorange;}
-body{background-color: darkturquoise;}
-p{font: italic bold 36px Tahoma}
+* { margin: 0; padding: 0; text-decoration: none; font-size: 1em; outline: none; }
+code, kbd, samp, pre, tt, var, textarea, input, select, isindex, listing, xmp, plaintext {
+font: inherit; font-size: 1em; white-space: normal; }
+dfn, i, cite, var, address, em { font-style: normal; }
+th, b, strong, h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet, table {
+border: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td, center { text-align: left; vertical-align: top; }
+body { line-height: 1; background: white; color: black; }
+q { quotes: "" ""; }
+ul, ol, dir, menu { list-style: none; }
+sub, sup { vertical-align: baseline; }
+a { color: inherit; }
+hr { display: none; } /* we don't need a visual hr in layout */
+/* disables some nasty font attributes in standard browsers */
+font { color: inherit !important; font: inherit !important; color: inherit !important; }
+marquee { overflow: inherit !important; -moz-binding: none; }
+blink { text-decoration: none; }
+nobr { white-space: normal; }
+
+
+body{font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #6F06CC;
+  }
+.wrapper{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #f3f3f3
+}
+
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.ul{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+    background-color: #6F06CC;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0 0 10px #f3f3f3
+}
+.main{
+    flex: 1 1 auto;
+}
+
+.hi_row{
+    display: flex;
+    justify-content: space-around;
+}
+.hi_body{
+    display: flex;
+    align-items: center;
+    }
+.hi_image{
+    display: block;
+    margin-top: 50px;
+    box-shadow: 0 0 10px red;
+    }
+    img{
+    width: 200px;
+    }
+    .hi_title{
+    font-size: 52px;
+    font-style: italic;
+    font-variant: small-caps ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flex{
+    padding: 50px 0;
+}
+.flex_row{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #f3f3f3;
+ }
+.flex_right{
+    flex: 300px;
+    justify-content: center;
+    box-shadow: 0 0 10px #f3f3f3;
+}
+.Skills{
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.list_li{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.Contacts{
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Projects{
+    padding: 30px 0 0 ;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flex_left{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    box-shadow: 0 0 10px #f3f3f3;
+ }
+.About{
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flex_just{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #f3f3f3;
+}
+.Education{
+    padding: 30px 0 20px;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+   }
+.Code{
+    padding: 30px 0 20px;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+.language{
+    padding: 30px 0 20px;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+.lang{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   }
+   .taid{
+       font-size: 18px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       padding-left: 15px;
+       margin-bottom: 13px;
+   }
+    .list_li2{
+       padding-left: 15px;
+       padding-right: 15px;
+       margin-top: 10px;
+   }
+   .ed{
+       padding-left: 15px;
+       padding-right: 15px;
+       font-size: 18px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;   }
+    .sub{
+        display: block;
+        padding: 20px;
+        margin: auto;
+        width: 60vh;
+        font-size: 15px;
+        font-style: italic;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 0.5px dashed black;
+        background-color: blanchedalmond;
+        color: black;
+        }
+.footer{
+    display: flex;
+    min-height: 50px;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+   .footer img{
+       border-radius: 0px;
+   }
+   .footer_txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+   }
+    .footer_txt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+}
+.footer_txt3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+}
+
